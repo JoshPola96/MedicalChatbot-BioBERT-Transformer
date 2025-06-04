@@ -1,0 +1,112 @@
+2025-05-07 10:20:54,886 - INFO - Medical Chatbot app started.
+2025-05-07 10:20:54,890 - INFO - Attempting to load local tokenizer...
+2025-05-07 10:20:54,922 - INFO - Initializing model...
+2025-05-07 10:20:54,924 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:20:55,753 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:20:56,000 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:20:56,266 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/model.safetensors HTTP/1.1" 404 0
+2025-05-07 10:20:56,269 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:20:56,694 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1 HTTP/1.1" 200 1196
+2025-05-07 10:20:56,966 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/main HTTP/1.1" 200 1069
+2025-05-07 10:20:57,226 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/discussions?p=0 HTTP/1.1" 200 2617
+2025-05-07 10:20:57,498 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/refs%2Fpr%2F4 HTTP/1.1" 200 2034
+2025-05-07 10:20:57,652 - INFO - Model loaded successfully.
+2025-05-07 10:20:57,795 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors.index.json HTTP/1.1" 404 0
+2025-05-07 10:20:58,044 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors HTTP/1.1" 302 0
+2025-05-07 10:21:00,396 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:00,818 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:00,824 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:21:00,824 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:21:00,826 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:21:00,827 - ERROR - Error in generate_response: tuple index out of range
+Traceback (most recent call last):
+  File "E:\personal\Code\Irohub_DS\10 - Projects\4 - Chatbot_Medical_Advice\streamlit.py", line 152, in generate_response
+    best_seq = sorted(finished or beam_sequences, key=lambda x: x[2], reverse=True)[0][1]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\personal\Code\Irohub_DS\10 - Projects\4 - Chatbot_Medical_Advice\streamlit.py", line 152, in <lambda>
+    best_seq = sorted(finished or beam_sequences, key=lambda x: x[2], reverse=True)[0][1]
+                                                                ~^^^
+IndexError: tuple index out of range
+2025-05-07 10:21:00,964 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:24,416 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:24,483 - INFO - Attempting to load local tokenizer...
+2025-05-07 10:21:24,512 - INFO - Initializing model...
+2025-05-07 10:21:24,515 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:21:24,908 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:21:25,156 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:21:25,413 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/model.safetensors HTTP/1.1" 404 0
+2025-05-07 10:21:25,418 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:21:25,851 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1 HTTP/1.1" 200 1196
+2025-05-07 10:21:26,116 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/main HTTP/1.1" 200 1069
+2025-05-07 10:21:26,380 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/discussions?p=0 HTTP/1.1" 200 2617
+2025-05-07 10:21:26,653 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/refs%2Fpr%2F4 HTTP/1.1" 200 2034
+2025-05-07 10:21:26,720 - INFO - Model loaded successfully.
+2025-05-07 10:21:26,903 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors.index.json HTTP/1.1" 404 0
+2025-05-07 10:21:27,157 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors HTTP/1.1" 302 0
+2025-05-07 10:21:44,406 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:44,532 - INFO - Medical Chatbot app started.
+2025-05-07 10:21:44,537 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:21:44,537 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:21:44,538 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:21:44,568 - ERROR - Error in generate_response: tuple index out of range
+Traceback (most recent call last):
+  File "E:\personal\Code\Irohub_DS\10 - Projects\4 - Chatbot_Medical_Advice\streamlit.py", line 152, in generate_response
+    best_seq = sorted(finished or beam_sequences, key=lambda x: x[2], reverse=True)[0][1]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\personal\Code\Irohub_DS\10 - Projects\4 - Chatbot_Medical_Advice\streamlit.py", line 152, in <lambda>
+    best_seq = sorted(finished or beam_sequences, key=lambda x: x[2], reverse=True)[0][1]
+                                                                ~^^^
+IndexError: tuple index out of range
+2025-05-07 10:21:44,691 - INFO - Medical Chatbot app started.
+2025-05-07 10:23:24,394 - INFO - Medical Chatbot app started.
+2025-05-07 10:23:26,101 - INFO - Medical Chatbot app started.
+2025-05-07 10:23:26,108 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:23:26,108 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:23:26,109 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:23:26,111 - WARNING - No candidates generated at step 0.
+2025-05-07 10:23:26,111 - ERROR - No valid sequences found after beam search.
+2025-05-07 10:23:26,249 - INFO - Medical Chatbot app started.
+2025-05-07 10:23:29,564 - INFO - Medical Chatbot app started.
+2025-05-07 10:23:29,572 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:23:29,572 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:23:29,573 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:23:29,577 - WARNING - No candidates generated at step 0.
+2025-05-07 10:23:29,577 - ERROR - No valid sequences found after beam search.
+2025-05-07 10:23:29,706 - INFO - Medical Chatbot app started.
+2025-05-07 10:24:55,469 - INFO - Medical Chatbot app started.
+2025-05-07 10:25:01,513 - INFO - Medical Chatbot app started.
+2025-05-07 10:25:09,788 - INFO - Medical Chatbot app started.
+2025-05-07 10:25:09,919 - INFO - Medical Chatbot app started.
+2025-05-07 10:25:09,924 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:25:09,924 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:25:09,926 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:25:09,927 - WARNING - No candidates generated at step 0.
+2025-05-07 10:25:09,927 - ERROR - No valid sequences found after beam search.
+2025-05-07 10:25:10,043 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:49,984 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:49,991 - INFO - User input: my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?
+2025-05-07 10:28:49,991 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:28:49,992 - INFO - Generating response for input: 'my hands get numb often, it happens while i m sleeping. i sleep with hands above my heart sometimes under my head. it also happens while i m driving with hands on steering wheel. they will get numb just by holding above my heart. i m really concerned. what is probable cause and remedy for this?'
+2025-05-07 10:28:49,995 - WARNING - No candidates generated at step 0.
+2025-05-07 10:28:49,995 - ERROR - No valid sequences found after beam search.
+2025-05-07 10:28:50,123 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:53,554 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:56,997 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:57,147 - INFO - Medical Chatbot app started.
+2025-05-07 10:28:57,153 - INFO - User input: , add_special_tokens=True)
+2025-05-07 10:28:57,153 - INFO - Params - Beams: 3, Temp: 1.0, MaxLen: 100
+2025-05-07 10:28:57,155 - INFO - Generating response for input: ', add_special_tokens=True)'
+2025-05-07 10:28:57,156 - WARNING - No candidates generated at step 0.
+2025-05-07 10:28:57,156 - ERROR - No valid sequences found after beam search.
+2025-05-07 10:28:57,284 - INFO - Medical Chatbot app started.
+2025-05-07 10:38:12,153 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:38:12,627 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:38:12,881 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-07 10:38:13,137 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/main/model.safetensors HTTP/1.1" 404 0
+2025-05-07 10:38:13,140 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-07 10:38:13,531 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1 HTTP/1.1" 200 1196
+2025-05-07 10:38:13,801 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/main HTTP/1.1" 200 1069
+2025-05-07 10:38:14,072 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/discussions?p=0 HTTP/1.1" 200 2617
+2025-05-07 10:38:14,350 - DEBUG - https://huggingface.co:443 "GET /api/models/dmis-lab/biobert-base-cased-v1.1/commits/refs%2Fpr%2F4 HTTP/1.1" 200 2034
+2025-05-07 10:38:14,617 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors.index.json HTTP/1.1" 404 0
+2025-05-07 10:38:14,892 - DEBUG - https://huggingface.co:443 "HEAD /dmis-lab/biobert-base-cased-v1.1/resolve/refs%2Fpr%2F4/model.safetensors HTTP/1.1" 302 0
